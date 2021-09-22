@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <meta charset="UTF-8">
@@ -13,15 +14,81 @@
     <style>
         @import'../Parcial-1/CSS/Css.css';
     </style>
-    <script type="text/javascript" src="../Parcial-1/script/Validación.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../Parcial-1/script/Script.js"></script>
 </head>
+
+
 <body>
 
 
+    <!--contenedor almacena todos los elementos de la paguina-->
+    <div id="contenedor">
+
+        <h1><strong>Web</strong>Developer</h1>
+
+        <form action="" method="get" id="form">
+            <h2>formulario de afiliación</h2>
+            <div id="general">
+                <input type="text" class="texto" name="Nombre" id="Nombre" placeholder="Nombre Completo" size="40">
+                <input type="email" class="texto" name="Email" id="Email" placeholder="Email" size="40">
+                <input type="text" class="texto" name="Telefono" id="Telefono" placeholder="Telefono" size="40">
+            </div>
 
 
 
+
+
+            <div id="controlgustos">
+                <input type="text" class="texto" name="Gustos" id="GustosC" size="32">
+                <button type="button" id="btnGustos">Gustos</button>
+                
+            </div>
+            <div id="divtabla">
+                <table id="tablagustos">
+
+                    <tr>
+
+                        <th>Gustos</th>
+
+                        <th>%</th>
+
+                        <th>Edit</th>
+
+                    </tr>
+<!--
+                    <tr>
+
+                        <td><input type="text" id="textotabla"></td>
+
+                        <td><input type="text" id="textotabla"></td>
+
+                        <td><p id="modificar">Editar</p></td>
+
+                    </tr>
+-->
+
+                </table>
+            </div>
+
+
+
+
+            <!--esta parte aparece cuando se modifica la tabla-->
+            <div id="ocultar">
+
+                <p>Pulse Aceptar para guardar los cambios o Cancelar para anularlos</p>
+                <button type="submit">Aceptar</button>
+                <button type="reset">Cancelar</button>
+
+            </div>
+            <!---->
+        </form>
+
+
+
+    </div>
 
 </body>
+
 </html>
